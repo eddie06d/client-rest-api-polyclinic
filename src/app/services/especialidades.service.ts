@@ -13,19 +13,19 @@ export class EspecialidadesService {
   constructor(private http: HttpClient) { }
 
   getEspecialidades(): Observable<any> {
-    return this.http.get<any>(this.URL_API_DEV);
+    return this.http.get<any>(this.URL_API_PROD);
   }
 
   createEspecialidad(data: Especialidad) {
-    return this.http.post(this.URL_API_DEV, data);
+    return this.http.post(this.URL_API_PROD, data);
   }
 
   updateEspecialidad(id: string, data: Especialidad) {
-    return this.http.put(`${this.URL_API_DEV}/${id}`, data);
+    return this.http.put(`${this.URL_API_PROD}/${id}`, data);
   }
 
   deleteEspecialidad(id: string) {
-    return this.http.delete(`${this.URL_API_DEV}/${id}`);
+    return this.http.delete(`${this.URL_API_PROD}/${id}`);
   }
 
 }
