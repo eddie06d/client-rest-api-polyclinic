@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class EspecialidadesService {
-  URL_API_PROD: string = 'https://policlinico.herokuapp.app/api/especialidades';
+  URL_API_PROD: string = 'https://policlinico.herokuapp.com/api/especialidades';
   URL_API_DEV: string = 'http://localhost:4000/api/especialidades';
 
   constructor(private http: HttpClient) { }
