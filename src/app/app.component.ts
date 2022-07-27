@@ -10,7 +10,7 @@ import Swal from 'sweetalert2';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'Cliente REST API Especialidades';
+  title = 'Cliente REST API Especialidades Test';
   especialidades: Especialidad[] = [];
   espFilter: Especialidad[] = [];
   especialidad?: Especialidad;
