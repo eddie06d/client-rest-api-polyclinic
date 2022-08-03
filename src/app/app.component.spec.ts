@@ -36,7 +36,7 @@ describe('AppComponent', () => {
     const description = form.controls['descripcion'];
     description.setValue('Descripción de ejemplo');
 
-    expect(form.invalid).toBeFalse();
+    expect(form.invalid).toBeTrue();
   });
 
   it('Should return a valid create form', () => {
